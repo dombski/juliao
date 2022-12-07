@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./icon.png">
+</head>
+
+<body id="body">
+
+
+    <table id="table" class="table table-responsive">
+        <thead id="tableHead">
+
+            <tr id="linha0">
+
+                <th id="nome0">Nome</th>
+                <th id="coluna01"> Nota 1 </th>
+                <th id="coluna02"> Nota 2 </th>
+                <th id="coluna03"> Nota 3 </th>
+                <th id="coluna04"> Nota 4 </th>
+                <th id="coluna_media0"> Média</th>
+                <th id="situacao0"> Situação</th>
+
+            </tr>
+
+        </thead>
+        <tbody id="tableBody">
+
+            <tr id="linha1">
+
+                <td>
+                    <input id="nome1" class="form-control" type="text" placeholder="Nome">
+                </td>
+
+                <td id="coluna11">
+                    <input id="nota11" type="number" min=0 max=100 placeholder="-">
+                </td>
+
+                <td id="coluna12">
+                    <input id="nota12" type="number" min=0 max=100 placeholder="-">
+                </td>
+
+                <td id="coluna13">
+                    <input id="nota13" type="number" min=0 max=100 placeholder="-">
+                </td>
+
+                <td id="coluna14">
+                    <input id="nota14" type="number" min=0 max=100 placeholder="-">
+                </td>
+
+                <td id="coluna_media1">
+                    <output id="media1"></output>
+                </td>
+
+                <td>
+                    <output id="situacao1"></output>
+                </td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <button type="button" onclick="criarLinha()">Adicionar Aluno</button>
+    <button type="button" onclick="deletarLinha()">Excluir Aluno</button>
+    <button type="button" onclick="criarColuna()">Adicionar Nota</button>
+    <button type="button" onclick="deletarColuna()">Excluir Nota</button>
+    <br>
+    <br>
+    <button class="verifyBtn" type="button" onclick="verificaMedias()">Verificar</button>
+    <br>
+    <br>
+    <br>
+    <label class="outMediaGeral"> Média Geral: 
+        <output placeholder="Média Geral" id="mediaGeral">
+        </output>
+    </label>
+
+    <script src="./script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; box-sizing: border-box; font-family: 'Comic Sans', monospace;}
+  
+  table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: arial;
+    
+  }
+
+  .table {
+    border-bottom: #847070 solid 1px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .table th,
+  .table td {
+    border-right: #726767 solid 2px;
+    padding: 20px 30px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+
+  .table td:last-child {
+     border-right: 0;
+     
+  }
+
+.table tbody td{
+    font-size: 16px;
+    text-align: center;
+  }
+  .table thead th {
+    font-weight: normal;
+    background-color: #003847;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .table tbody > tr:nth-child(odd) > td,
+  .table tbody > tr:nth-child(odd) > th {
+    background-color: #f8f8f8;
+  }
+
+/* Tornando a tabela responsiva*/
+
+/* para resoluções de até 767px */
+@media (max-width: 767px) { 
+  
+  /* Tabela responsiva */
+  .table-responsive {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+/*  Tabela funcionando como um bloco  */
+  .table-responsive thead,
+  .table-responsive tbody,
+  .table-responsive th,
+  .table-responsive td,
+  .table-responsive tr {
+    display: block;
+  }
+/* Defino um tamanho para as células */
+  .table-responsive td,
+  .table-responsive th {
+    height: 35px;
+  }
+  .table thead th {
+     font-size: 16px;
+  }
+  .table th,
+  .table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .table-responsive thead {
+    float: left;
+  }
+
+  .table-responsive tbody {
+    width: auto;
+    position: relative;
+   
+    overflow-x: auto;  /* scroll horizontal */
+    /* Funcionamento para dispositivos touch */
+    -webkit-overflow-scrolling: touch; 
+    white-space: nowrap;
+  }
+/*  Posicionando linhas lado-a-lado  */
+  .table-responsive tbody tr {
+    display: inline-block;
+  }
+
+  .table td:last-child {
+     border-right: #d0d5d8 solid 1px;
+  }
+
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: #6e6e6e;
+    box-shadow: 0px 15px 20px rgba(54, 54, 54, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  button:active {
+    transform: translateY(-1px);
+  }
+
+  .outMediaGeral {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: #003847;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   
+  }
+  .verifyBtn {
+    background-color: #ff2553;
+  }
